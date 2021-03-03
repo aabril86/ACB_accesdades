@@ -60,10 +60,25 @@ public class TeamController {
 	}
 
 	public void addTeam() throws SQLException, IOException {
+		Scanner scanner = new Scanner(System.in);
 
 		Statement st = connection.createStatement();
-		ResultSet rs;
 
-		//rs = st.executeUpdate("INSERT INTO team")
+		String name, type, country, city, cname;
+		System.out.print("Name: ");
+		name = scanner.nextLine();
+		System.out.print("Type: ");
+		type = scanner.nextLine();
+		System.out.print("Country: ");
+		country = scanner.nextLine();
+		System.out.print("City: ");
+		city = scanner.nextLine();
+		System.out.print("Court name: ");
+		cname = scanner.nextLine();
+
+		st.executeUpdate("Insert into TEAM (NAME,TYPE,COUNTRY,CITY,COURT_NAME) values ('" + name + "','" + type + "','" + country + "','" + city + "','" + cname + "')");
+
 	}
+
+
 }

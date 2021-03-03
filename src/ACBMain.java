@@ -35,21 +35,19 @@ public class ACBMain {
 			switch (option) {
 			case 1:
 				teamController.showTeams();
-				// dbaccessor.mostraAutors();
 				break;
 
 			case 2:
 
 				teamController.showPlayers();
-				// dbaccessor.mostraRevistes();
 				break;
 
 			case 3:
-				// dbaccessor.mostraRevistesArticlesAutors();
+				teamController.addTeam();
 				break;
 
 			case 4:
-				// dbaccessor.altaAutor();
+				playerController.addPlayer();
 				break;
 
 			case 5:

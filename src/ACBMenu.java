@@ -21,7 +21,7 @@ public class ACBMenu {
 			System.out.println("3. Crea Equip");
 			System.out.println("4. Crea Jugador");
 			System.out.println("5. Crea Partit");
-			System.out.println("6. Mostra jugadors a un equip");
+			System.out.println("6. Mostra jugadors sense equip");
 			System.out.println("7. Assigna jugador a un equip");
 			System.out.println("8. Desvincula jugador d'un equip");
 			System.out.println("9. Carrega estadístiques");

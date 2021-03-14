@@ -78,6 +78,29 @@ public class TeamController {
 
 		st.executeUpdate("Insert into TEAM (NAME,TYPE,COUNTRY,CITY,COURT_NAME) values ('" + name + "','" + type + "','" + country + "','" + city + "','" + cname + "')");
 
+		st.close();
+	}
+
+	public void addMatch() throws SQLException, IOException {
+		Scanner scanner = new Scanner(System.in);
+
+		Statement st = connection.createStatement();
+		String hteam, vteam, date;
+		int att;
+
+		System.out.print("Home team: ");
+		hteam = scanner.nextLine();
+		System.out.print("Visitor team: ");
+		vteam = scanner.nextLine();
+		System.out.print("Match date: ");
+		date = scanner.nextLine();
+		System.out.print("Attendance: ");
+		att = scanner.nextInt();
+		scanner.nextLine();
+
+		st.executeUpdate("Insert into MATCH (HOME_TEAM,VISITOR_TEAM,MATCH_DATE,ATTENDANCE) values ('" + hteam + "','" + vteam + "','" + date + "','" + att +  "')");
+
+		st.close();
 	}
 
 

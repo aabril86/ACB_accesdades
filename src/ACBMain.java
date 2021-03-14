@@ -51,19 +51,19 @@ public class ACBMain {
 				break;
 
 			case 5:
-				// dbaccessor.altaRevista();
+				teamController.addMatch();
 				break;
 
 			case 6:
-				// dbaccessor.altaArticle();
+				playerController.showPlayersNoTeam();
 				break;
 
 			case 7:
-				// dbaccessor.actualitzarTitolRevistes(conn);
+				playerController.assignPlayer();
 				break;
 
 			case 8:
-				// dbaccessor.afegeixArticleARevista(conn);
+				playerController.detatchTeam();
 				break;
 
 			case 9:
